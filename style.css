@@ -1,0 +1,232 @@
+body{
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+#nav_bar{
+    padding: 15px;
+}
+#home{
+    height: 100vh;
+    background-color: #262833;
+}
+#portfo{
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#lio{
+    color: rgb(241, 56, 118);
+    font-size: 40px;
+    font-weight: 600;
+}
+.navi{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 18px;
+    color: rgb(241, 56, 118);
+}
+#nav{
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    float: right;
+}
+#intro{
+    float: left;
+    margin-top: 10%;
+    margin-left: 35px;
+}
+#first_line{
+    margin-left: 2px;
+    font-size: 25px;
+    font-weight: 50;
+}
+#second_line{
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 600;
+}
+#third_line{
+    margin-left: 2px;
+    font-size: 30px;
+    margin-top: -50px;
+    font-weight: 550;
+}
+#web{
+    color: rgb(241, 56, 118);
+}
+#image{
+    margin-top: 8%;
+    margin-right: 10%;
+    border-radius: 50%;
+    float: right;
+    width: 350px;
+    height: 350px;
+}
+button{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: 2px solid rgb(241, 56, 118);
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(241, 56, 118);
+}
+#about{
+    width: auto;
+    height: fit-content;
+}
+#aboutme{
+    font-family: sans-serif;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #111;    
+}
+#aboutme::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -147px;
+    width: 200px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+#aboutme::after{
+    font-size: 20px;
+    content: "who i am";
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    color: rgb(241, 56, 118);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+#imgabout{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+
+    width: 250px;
+    height: 250px;
+}
+#aboutcontent{
+    text-align: center;
+    text-justify: auto;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+    color: black;
+}
+#services{
+    margin-top: 0px;
+    width: auto;
+    height: fit-content;
+    background-color: #262833;
+}
+#ourservice{
+    padding-top: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+#ourservice::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -942px;
+    width: 215px;
+    height: 3px;
+    background: white;
+    transform: translateX(-50%);
+}
+#ourservice::after{
+    font-size: 20px;
+    content: "what i provide";
+    position: absolute;
+    bottom: -955px;
+    left: 50%;
+    color: rgb(241, 56, 118);
+    padding: 5px;
+    background:#262833;
+    transform: translateX(-50%);
+}
+#gridservice{
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: 90px;
+    display: grid;
+    width: 1150px;
+    height: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 40px;
+}
+h4{
+    text-align: center;
+}
+.serviceimage{
+    margin-left: 46%;
+}
+.servicecontent{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.serviceoutline{
+    border: 3px solid rgb(241, 56, 118);
+    border-radius: 20px;
+}
+.serviceoutline:hover{
+    background: rgb(241, 56, 118);
+    cursor: pointer;
+}
+#myskilltitle{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #111;    
+}
+#myskilltitle::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2942px;
+    width: 215px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+#myskilltitle::after{
+    font-size: 20px;
+    content: "what i provide";
+    position: absolute;
+    bottom: -1955px;
+    left: 50%;
+    color: rgb(241, 56, 118);
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
