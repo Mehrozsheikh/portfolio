@@ -44,7 +44,7 @@ section{
     padding: 0 40px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .testimonial, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -256,17 +256,16 @@ section .title::after{
     background: #262833;
 }
 .services .title::before,
-.teams .title::before{
+.testimonial .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.testimonial .title::after{
     background: #262833;
     content: "what i provide";
 }
 .serviceicon{
     width: 40px;
-
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -376,70 +375,93 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+/* testimonial section start here */
+.testimonial .title::after{
+    content: "what i did";
+    background-color: #262833;
 }
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+.testimonial{
+    background: #262833;
+    color: white;
 }
-.teams .carousel .card:hover{
-    background: rgb(241, 56, 118);
-}
-.teams .carousel .card .box{
+::selection{
+    background: rgba(23,162,184,0.3);
+  }
+  .wrapper{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
+    justify-content: space-between;
+  }
+  .wrapper .tbox{
+    background: #262833;
+    width: calc(33% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  }
+  .wrapper .tbox i.quote{
+    font-size: 20px;
+    color: rgb(241, 56, 118);
+  }
+  .wrapper .tbox .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .tbox .info .name{
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .tbox .info .job{
+    font-size: 16px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    color: rgb(241, 56, 118);
+  }
+  .tbox .info .stars{
+    margin-top: 2px;
+  }
+  .tbox .info .stars i{
+    color: rgb(241, 56, 118);
+  }
+  .tbox .content .image{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: rgb(241, 56, 118);
+    border-radius: 50%;
+  }
+  .content .image img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(241, 56, 118);
+    border: 2px solid #fff;
+  }
+  .tbox:hover{
+    cursor: pointer;
+    transform: scale(1.03);
     transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid rgb(241, 56, 118)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: rgb(241, 56, 118)!important;
-}
+    background: rgb(241, 56, 118);
+  }
+  .tbox:hover .image{
+      background: white;
+  }
+  .tbox:hover .stars i{
+      color: white;
+  }
+  .tbox:hover .job{
+    color: white;
+    }
+    .tbox:hover i.quote{
+        color: white;
 
+    }
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -486,7 +508,7 @@ section .title::after{
     margin-bottom: 15px;
 }
 .contact .right form .textarea{
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 .contact .right form .name{
@@ -496,6 +518,7 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
+    margin-top: -80px;
     border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
@@ -535,6 +558,7 @@ section .title::after{
   color: rgb(241, 56, 118);
   background: none;
 }
+
 /* footer section styling */
 footer{
     background: #262833;
@@ -674,6 +698,17 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+@media (max-width: 1045px) {
+    .wrapper .tbox{
+      width: calc(50% - 10px);
+      margin: 10px 0;
+    }
+  }
+@media (max-width: 702px) {
+    .wrapper .tbox{
+      width: 100%;
+    }
+  }
 input{
     display: none;
 }
