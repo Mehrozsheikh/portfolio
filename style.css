@@ -697,6 +697,13 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .social{
+        visibility: hidden;
+        padding: 1px;
+        gap: 2px;
+        color: white;
+        font-size: 0.2px;
+    }
 }
 @media (max-width: 1045px) {
     .wrapper .tbox{
