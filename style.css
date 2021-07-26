@@ -697,6 +697,23 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .home .home-content .text-1{
+        margin-top: 70px;
+        font-size: 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: -3px;
+    }
+    .home .home-content .text-3{
+        font-size: 31px;
+        margin: 5px 0;
+    }
+    .home .home-content .text-3 span{
+        color: #057eff;
+        font-weight: 500;
+    }
     .social{
         visibility: hidden;
         padding: 1px;
